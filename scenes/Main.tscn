@@ -7,8 +7,10 @@
 [node name="Main" type="Node2D"]
 
 [node name="Background" parent="." instance=ExtResource( 3 )]
+position = Vector2( 640, 360 )
+scale = Vector2( 1280, 720 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 160, 178 )
+position = Vector2( 642.008, 648 )
 
 [node name="FPS" parent="." instance=ExtResource( 1 )]
