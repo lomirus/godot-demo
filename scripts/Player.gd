@@ -11,7 +11,13 @@ func _ready():
 func _input(event):
 	if event.is_action_pressed("defense"):
 		arms.animation = "defense"
+		$Defense.play()
 	if event.is_action_released("defense"):
+		arms.animation = "normal"
+	if event.is_action_pressed("attack"):
+		arms.animation = "attack"
+		$Attack.play()
+	if event.is_action_released("attack"):
 		arms.animation = "normal"
 
 func _physics_process(_delta):
